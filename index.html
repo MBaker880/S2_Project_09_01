@@ -52,10 +52,12 @@
         </ul>
     </nav>
     <section>
+        <!-- Header of Registration form. -->
         <h1>Conference Registration Form</h1>
         <p>Required Item (*)</p>
         <form action="http://www.example.com/cg/register" method="post">
             <div>
+                <!-- Drop down box with different options for the Title Category. -->
                 <label for="titleBox">Title</label>
                 <input name="title" id="titleBox" type="text" list="titleList">
                 <datalist id="titleList">
@@ -69,30 +71,37 @@
                 </datalist>
             </div>
             <div>
+                <!-- Input field for users to say their first name and is required. -->
                 <label for="fnBox">First Name*</label>
                 <input name="firstName" id="fnBox" type="text" required>
             </div>
             <div>
+                <!-- Input field for users to say their last name and is required. -->
                 <label for="lnBox">Last Name*</label>
                 <input name="latName" id="lnBox" type="text" required>
             </div>
             <div>
+                <!-- Input field for users to say their address and is required. -->
                 <label for="addBox">Address*</label>
                 <input name="address" id="addBox" type="text" required>
             </div>
             <div>
+                <!-- Input field for users to say their company or university and isnt required. -->
                 <label for="groupBox">Company or University</label>
                 <input name="group" id="groupBox" type="text">
             </div>
             <div>
+                <!-- Input field for users to say their email which is required. -->
                 <label for="mailBox">E-mail*</label>
                 <input name="email" id="mailBox" type="email" required>
             </div>
             <div>
+                <!-- Input field for users to say their phone number which is required. -->
                 <label for="phoneBox">Phone Number*</label>
                 <input name="phoneNumber" id="phoneBox" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required>
             </div>
             <div>
+                <!-- Drop down list for users to select the ACGIP Membership lan that they want. -->
                 <label for="idBox">ACGIP Membership Number</label>
                 <input name="acgipID" id="idBox" type="text" placeholder=" acgip-nnnnnn" pattern="^acgip\-\d{6}$">
             </div>
@@ -108,6 +117,7 @@
             </div>
             <div>
                 <p>
+                    <!-- The button to submit the form. -->
                     <input type="submit" value="CONTINUE" />
                 </p>
             </div>
